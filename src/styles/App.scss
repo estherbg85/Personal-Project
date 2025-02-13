@@ -1,0 +1,90 @@
+@use '../styles/core/variables' as varis;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.landing {
+    text-align: center;
+    border: 2px solid rgb(12, 12, 60);
+    background-color: rgb(8, 32, 87);
+
+    &_img {
+        width: 100%; 
+        height: auto;
+    }
+
+    &_title {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(234, 20, 127);
+        text-shadow: 
+             2px 2px 0px #4e114d,  
+            -2px -2px 0px #4e114d, 
+            2px -2px 0px #4e114d, 
+            -2px 2px 0px #4e114d; 
+
+            @include varis.tablet {
+                font-size: 30px;
+            }
+    }
+
+    &_titleSub {
+        color: white;
+        font-size: 14px;
+
+        @include varis.tablet {
+            font-size: 18px;
+        }
+    }
+
+    &_cloud {
+        height: 30px;
+        width: 30px;
+
+        @include varis.tablet {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
+
+.header {
+    background-color: rgb(8, 32, 87);
+    text-align: center;
+
+    &_title {
+        font-size: 25px;
+        padding-block: 20px;
+        padding-inline: 25px;
+        color: rgb(245, 121, 245);
+    }
+
+    &_paragraph {
+        margin-inline: 0;
+        border-bottom: 2px solid rgb(234, 20, 127);;
+    }
+
+    &_list {
+       justify-content: center;
+        padding: 10px;
+        color: rgb(245, 121, 245);
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+    &_list li {
+        margin-bottom: 10px;
+        margin-right: 18px;
+    }
+}
+
