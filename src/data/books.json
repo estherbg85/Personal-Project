@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "LUNA",
-        "image_url": "",
+        "image_url": "https://imagessl8.casadellibro.com/a/l/s7/28/9788484643128.webp",
         "ageRange": {
         "min": 0,
         "max": 1
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "COCODRILO",
-        "image_url": "",
+        "image_url": "https://imagessl1.casadellibro.com/a/l/s7/11/9788493378011.webp",
         "ageRange": {
         "min": 0,
         "max": 1
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "name": "CUCÚ TRAS LUNA",
-        "image_url": "",
+        "image_url": "https://imagessl8.casadellibro.com/a/l/s7/48/9788408241348.webp",
         "ageRange": {
         "min": 0,
         "max": 1
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "name": "EL POLLO PEPE SE DA UN BAÑO",
-        "image_url": "",
+        "image_url": "https://imagessl1.casadellibro.com/a/l/s7/51/9788413920351.webp",
         "ageRange": {
         "min": 0,
         "max": 1
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "name": "LOS ANIMALITOS. Mi primer libro de sonidos",
-        "image_url": "",
+        "image_url": "https://imagessl6.casadellibro.com/a/l/s7/56/9788408236856.webp",
         "ageRange": {
         "min": 0,
         "max": 1
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "name": "EL POLLO PEPE",
-        "image_url": "",
+        "image_url": "https://imagessl3.casadellibro.com/a/l/s7/13/9788434856813.webp",
         "ageRange": {
         "min": 1,
         "max": 2
@@ -80,7 +80,7 @@
     {
         "id": 7,
         "name": "PEPE Y MILA PASAN EL DÍA EN LA GRANJA",
-        "image_url": "",
+        "image_url": "https://imagessl7.casadellibro.com/a/l/s7/47/9788467596847.webp",
         "ageRange": {
         "min": 1,
         "max": 2
@@ -93,7 +93,7 @@
     {
         "id": 8,
         "name": "CUCÚ-TRAS",
-        "image_url": "",
+        "image_url": "https://imagessl8.casadellibro.com/a/l/s7/48/9788434892248.webp",
         "ageRange": {
         "min": 1,
         "max": 2
@@ -106,7 +106,7 @@
     {
         "id": 9,
         "name": "CUCÚ-TRAS DE ANIMALES DEL POLO",
-        "image_url": "",
+        "image_url": "https://imagessl3.casadellibro.com/a/l/s7/43/9788467517743.webp",
         "ageRange": {
         "min": 1,
         "max": 2
@@ -119,7 +119,7 @@
     {
         "id": 10,
         "name": "CU´CU-TRAS DE LA SELVA",
-        "image_url": "",
+        "image_url": "https://imagessl9.casadellibro.com/a/l/s7/39/9788467504439.webp",
         "ageRange": {
         "min": 1,
         "max": 2
@@ -132,7 +132,7 @@
     {
         "id": 11,
         "name": "BUSCA AL GRÚFALO",
-        "image_url": "",
+        "image_url": "https://imagessl6.casadellibro.com/a/l/s7/36/9788469640036.webp",
         "ageRange": {
         "min": 2,
         "max": 3
@@ -145,7 +145,7 @@
     {
         "id": 12,
         "name": "LA PEQUEÑA ORUGA GLOTONA",
-        "image_url": "",
+        "image_url": "https://imagessl8.casadellibro.com/a/l/s7/48/9788488342348.webp",
         "ageRange": {
         "min": 2,
         "max": 3
@@ -158,7 +158,7 @@
     {
         "id": 13,
         "name": "UN BICHO EXTRAÑO",
-        "image_url": "",
+        "image_url": "https://imagessl7.casadellibro.com/a/l/s7/17/9788484643517.webp",
         "ageRange": {
         "min": 2,
         "max": 3
@@ -171,7 +171,7 @@
     {
         "id": 14,
         "name": "UN LIBRO",
-        "image_url": "",
+        "image_url": "https://imagessl8.casadellibro.com/a/l/s7/68/9788492750368.webp",
         "ageRange": {
         "min": 2,
         "max": 3
@@ -183,7 +183,7 @@
     {
         "id": 15,
         "name": "¡VOY A COMEDTE!",
-        "image_url": "",
+        "image_url": "https://imagessl3.casadellibro.com/a/l/s7/63/9788492750863.webp",
         "ageRange": {
         "min": 2,
         "max": 3
