@@ -179,7 +179,8 @@
         "desc": "Al abrir este libro solo se ve un círculo amarillo sobre la página en blanco. Entonces, se invita al lector a pulsar ese círculo con el dedo y averiguar qué ocurre. ¿Qué niño curioso podría resistirse a semejante desafío? Para saber la respuesta simplemente hay que dar la vuelta a la página ¡Y así empieza la magia! Círculos rojos, amarillos y azules se desdoblan, cambian de lugar, se colocan en fila, crecen Incluso están a punto de caerse por el borde del libro o volar hasta desaparecer. Todo depende de lo que el niño haga, si los aprieta, los frota, sopla sobre ellos o los agita. " ,
         "autor": "Herve Tullet",
         "publishter": "Kókinos" 
-    }
+    },
+
     {
         "id": 15,
         "name": "¡VOY A COMEDTE!",
@@ -192,4 +193,6 @@
         "autor": "Jean-Marc Derqueen y Luare de Faya",
         "publishter": "Kókinos" 
     }
+
 ]
+
