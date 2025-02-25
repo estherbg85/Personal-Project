@@ -1,6 +1,8 @@
 import Header from "../layout/Header";
+import BooksList from "./BooksList";
 import NewBooks from "./NewBooks";
-function HomePage() {
+
+function HomePage({ books }) {
   return (
     <div>
       <Header />
@@ -32,8 +34,8 @@ function HomePage() {
         </p>
         <button className="btnContact">Contacto</button>
       </section>
-
       <NewBooks></NewBooks>
+      <BooksList books={books} />
     </div>
   );
 }

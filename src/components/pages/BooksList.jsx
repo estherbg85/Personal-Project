@@ -1,15 +1,16 @@
 import PropTypes from "prop-types";
+import BooksItem from "./BooksItem";
 
-function BooksList(books) {
+function BooksList({ books }) {
+  const sortedBooks = [...books].sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
+
   return (
-    <ul className="book_list">
-      {books.map((book) => (
-        <li key={book.id} className="book_item">
-          <img className="book_image" src={book.image_url} alt={book.name} />
-          <h2 className="book_title">{book.name}</h2>
-          <p className="book_age">
-            {book.ageRange.min} - {book.ageRange.max} años
-          </p>
+    <ul className="book">
+      {sortedBooks.map((book) => (
+        <li key={book.id} className="book_list">
+          <BooksItem book={book}></BooksItem>
         </li>
       ))}
     </ul>

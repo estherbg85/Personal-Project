@@ -17,7 +17,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/HomePage" element={<HomePage books={books} />} />
         </Routes>
       </main>
     </div>
