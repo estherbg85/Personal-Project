@@ -3,6 +3,7 @@ import Header from "../layout/Header";
 import Form from "../pages/Form";
 import BooksList from "./BooksList";
 import NewBooks from "./NewBooks";
+import Footer from "../layout/Footer";
 
 function HomePage({ books }) {
   return (
@@ -11,6 +12,7 @@ function HomePage({ books }) {
       <Form></Form>
       <NewBooks></NewBooks>
       <BooksList books={books} />
+      <Footer></Footer>
     </div>
   );
 }

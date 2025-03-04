@@ -256,6 +256,20 @@ main {
         }
     }
 
+.footer {
+    margin-top: 45px;
+    border-top: 2px solid rgb(90, 117, 182);
+
+        &_copy {
+            margin-block: 20px;
+        }
+
+        &_img {
+            width: 120px;
+            height: 80px;
+        }
+  } 
+
 
 
 

@@ -1,4 +1,5 @@
 import Header from "../layout/Header";
+import Footer from "../layout/Footer";
 
 function Contact() {
   return (
@@ -55,6 +56,7 @@ function Contact() {
           rows="5"
         ></textarea>
       </form>
+      <Footer></Footer>
     </div>
   );
 }
