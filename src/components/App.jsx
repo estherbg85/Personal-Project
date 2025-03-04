@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import { useState, useEffect } from "react";
 import booksData from "../data/books.json";
 import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/HomePage" element={<HomePage books={books} />} />
           <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </main>
     </div>

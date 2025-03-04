@@ -106,7 +106,6 @@ main {
 
     &_display {
         display: grid;
-        display: grid;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -210,3 +209,54 @@ main {
     }
     
 }
+.contact {
+
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    
+        &_label {
+            color: rgb(90, 117, 182);
+        }
+        & input {
+            margin-inline: auto;
+            padding-left: 10px;
+            border-radius: 8px;
+            border: 3px solid rgb(90, 117, 182);
+        }
+        &_name {
+            height: 30px;
+            width: 120px;
+            border-radius: 8px;
+            border: 3px solid rgb(90, 117, 182);
+        }
+
+        &_email {
+            width: 220px;
+            height: 30px;
+        }
+
+        &_title {
+            width: 220px;
+            height: 30px;
+        }
+
+        &_information {
+            padding-left: 10px;
+            border-radius: 8px;
+            border: 3px solid rgb(90, 117, 182);
+            width: 220px;
+            height: 85px;
+        }
+
+        &_information::placeholder {
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+
+
+
+

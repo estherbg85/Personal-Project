@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Form() {
   return (
     <form className="form">
@@ -23,7 +25,9 @@ function Form() {
       </div>
 
       <p>Si no lo encuentras, ponte en contacto conmigo y lo solucionaremos</p>
-      <button className="btnContact">Contacto</button>
+      <Link to="/Contact">
+        <button className="btnContact">Contacto</button>
+      </Link>
     </form>
   );
 }
