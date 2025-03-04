@@ -7,7 +7,7 @@ function Form() {
           Titulo
         </label>
         <input
-          className="form_title"
+          className="form_input"
           autoComplete="off"
           type="search"
           name="title"
@@ -16,7 +16,7 @@ function Form() {
           Autor
         </label>
         <select
-          className="form_autor"
+          className="form_input"
           id="autorFilter"
           placeholder="Autor"
         ></select>
