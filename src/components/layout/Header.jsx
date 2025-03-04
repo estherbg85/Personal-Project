@@ -1,16 +1,31 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="header">
       <h1 className="header_title">EL Arcoiris de los Sueños</h1>
-      <p className="header_paragraph"></p>
       <ul className="header_list">
-        <li>Inicio</li>
-        <li>Sobre mí</li>
-        <li>Cuentos 0-1</li>
-        <li>Cuentos 1-2</li>
-        <li>Cuentos 2-3</li>
-        <li>Contacto</li>
-        <li>Eventos</li>
+        <Link className="header_pages" to="/HomePage">
+          Inicio
+        </Link>
+        <Link className="header_pages" to="/AboutMe">
+          Sobre mí
+        </Link>
+        <Link className="header_pages" to="/Books0_1">
+          Cuentos 0-1
+        </Link>
+        <Link className="header_pages" to="/Books1_2">
+          Cuentos 1-2
+        </Link>
+        <Link className="header_pages" to="/Books2_3">
+          Cuentos 2-3
+        </Link>
+        <Link className="header_pages" to="/Contact">
+          Contacto
+        </Link>
+        <Link className="header_pages" to="/Events">
+          Eventos
+        </Link>
       </ul>
     </header>
   );

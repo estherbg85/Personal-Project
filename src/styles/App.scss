@@ -55,40 +55,75 @@
         }
     }
 }
-
+.li {
+    text-decoration: none;
+    color: white;
+}
 .header {
-    background-color: rgb(8, 32, 87);
     text-align: center;
 
     &_title {
+        word-spacing: 20px;
         font-size: 25px;
         padding-block: 20px;
         padding-inline: 25px;
-        color: rgb(245, 121, 245);
-    }
-
-    &_paragraph {
-        margin-inline: 0;
-        border-bottom: 2px solid rgb(234, 20, 127);;
+        font-size: 2rem;
+        font-weight: bold;
+        background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &_list {
+        background-color: rgb(8, 32, 87);
        justify-content: center;
         padding: 10px;
         color: rgb(245, 121, 245);
         list-style: none;
+        text-decoration: none;
         display: flex;
         flex-wrap: wrap;
-    
+        border-bottom: 2px solid rgb(90, 117, 182);
     }
 
-    &_list li {
-        margin-bottom: 10px;
-        margin-right: 18px;
+    &_pages {
+        margin-inline: 20px;
+        margin-bottom: 15px;
+        color: rgb(245, 121, 245);
+        text-decoration: none;
     }
 }
+
 main {
     background-color: rgb(8, 32, 87);
+    color: rgb(245, 121, 245);
+    text-align: center;
+}
+
+
+.form {
+    margin-top: 25px;
+    align-items: center;
+    &_display {
+        display: grid;
+    }
+
+    &_filter {
+        
+        font-size: 20px;
+        color: rgb(90, 117, 182);
+    }
+
+    &_title {
+        width: 280px;
+        height: 30px;
+        border-radius: 8px;
+        border: 2px solid rgb(37, 190, 139);
+    }
+
+    &_author {
+
+    }
 }
 .book {
     display: grid;
@@ -96,6 +131,8 @@ main {
     justify-content: center;
     gap: 10px; 
     grid-row-gap: 20px;
+    color: white;
+    
 
     @include varis.tablet {
         margin-inline: 10px;
@@ -112,18 +149,20 @@ main {
     
     &_list a {
         text-decoration: none;
+        list-style: none;
     }
 
     &_list {
+        list-style: none;
         text-align: center;
         align-items: center;     
         justify-content: center;
         list-style-type: none;
-        width: 250px;
-        height: 200px;
-     
+        width: 220px;
+        height: 300px;
         border-radius: 3%;
-        background-color: rgb(66, 99, 177);
+        border: solid rgb(245, 121, 245);
+        background-color: rgb(90, 117, 182);
 
         @include varis.tablet {
             width: 230px;
@@ -137,15 +176,23 @@ main {
     }
 
     &_image { 
-        margin-top: 15px;
+        margin-block: 15px;
         width: 180px;   
-        height: 270px; 
+        height: 200px; 
 
         @include varis.desktop { 
             width: 240px;   
             height: auto;   
         }
     }
-  
+
+    &_title {
+        font-size: 16px;
+    }
+    
+    &_age {
+
+    }
 
 }
+
