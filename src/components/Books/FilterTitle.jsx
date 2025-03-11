@@ -1,10 +1,20 @@
 import PropTypes from "prop-types";
+import FilterAutor from "./FilterAutor";
 
-function FilterTitle({ handleInputFilterTitle }) {
+function FilterTitle({
+  handleInputFilterTitle,
+  handleFilterAutor,
+  handleClickClear,
+  bookOne,
+  autorOne,
+  autors,
+}) {
+
+    const 
   return (
     <form className="form">
       <h2 className="form_search">¿Buscas un libro en concreto?</h2>
-      <div className="form_display">
+      <section className="form_display">
         <label className="form_filter" htmlFor="name">
           Titulo
         </label>
@@ -14,22 +24,31 @@ function FilterTitle({ handleInputFilterTitle }) {
           type="search"
           name="title"
           onInput={handleInputFilterTitle}
+          value={bookOne}
         />
         <label className="form_filter" htmlFor="autor">
           Autor
         </label>
-        <select
-          className="form_input"
-          id="autorFilter"
-          placeholder="Autor"
-        ></select>
-      </div>
+        <FilterAutor
+          autors={autors}
+          onChange={handleFilterAutor}
+          autorOne={autorOne}
+        ></FilterAutor>
+      </section>
+      <button className="form_btn" onClick={handleClickClear}>
+        Borrar
+      </button>
     </form>
   );
 }
 
 FilterTitle.propTypes = {
   handleInputFilterTitle: PropTypes.func,
+  handleFilterAutor: PropTypes.func,
+  handleClickClear: PropTypes.func,
+  bookOne: PropTypes.string,
+  autorOne: PropTypes.string,
+  autors: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FilterTitle;
