@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function FilterTitle({ handleInputFilterTitle }) {
   return (
     <form className="form">
@@ -25,5 +27,9 @@ function FilterTitle({ handleInputFilterTitle }) {
     </form>
   );
 }
+
+FilterTitle.propTypes = {
+  handleInputFilterTitle: PropTypes.func,
+};
 
 export default FilterTitle;

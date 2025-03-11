@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import booksData from "../data/books.json";
+import booksData from "../../data/books.json";
 
 function useFetch() {
   const [books, setBooks] = useState([]);
@@ -7,6 +7,8 @@ function useFetch() {
   useEffect(() => {
     setBooks(booksData);
   }, []);
+
+  return { books };
 }
 
 export { useFetch };
