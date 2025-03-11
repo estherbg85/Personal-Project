@@ -2,17 +2,20 @@ import "../styles/App.scss";
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
-import { useState, useEffect } from "react";
-import booksData from "../data/books.json";
+import { useState } from "react";
+
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [books, setBooks] = useState([]);
+  const [bookOne, setBookOne] = useState("");
+  const [authorOne, setAuthorOne] = useState("");
+  const [filteredBook, setFilteredBook] = useState([]);
 
-  useEffect(() => {
-    setBooks(booksData);
-  }, []);
+  const handleInputFilterTitle = (ev) => {
+    ev.preventDefault();
+    filtered;
+  };
 
   return (
     <div>
