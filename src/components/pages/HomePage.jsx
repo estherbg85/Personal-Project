@@ -1,43 +1,43 @@
 import PropTypes from "prop-types";
-import Header from "../layout/Header";
 import Form from "./Form";
 import BooksList from "./BooksList";
 import NewBooks from "./NewBooks";
-import Footer from "../layout/Footer";
 import FilterTitle from "../books/FilterTitle";
 
 function HomePage({
   books,
   handleInputFilterTitle,
-  handleFilterAutor,
+  handleInputFilterAutor,
   handleClickClear,
   bookOne,
   autorOne,
+  uniqueAutors,
 }) {
   return (
     <div>
-      <Header />
       <FilterTitle
         handleInputFilterTitle={handleInputFilterTitle}
-        handleFilterAutor={handleFilterAutor}
+        handleFilterAutor={handleInputFilterAutor}
         handleClickClear={handleClickClear}
         bookOne={bookOne}
         autorOne={autorOne}
-      ></FilterTitle>
-      <Form></Form>
-      <NewBooks></NewBooks>
+        uniqueAutors={uniqueAutors}
+      />
+      <Form />
+      <NewBooks />
       <BooksList books={books} />
-      <Footer></Footer>
     </div>
   );
 }
 
 HomePage.propTypes = {
-  books: PropTypes.array,
-  handleInputFilterTitle: PropTypes.func,
-  handleFilterAutor: PropTypes.func,
-  handleClickClear: PropTypes.func,
-  bookOne: PropTypes.string,
-  autorOne: PropTypes.string,
+  books: PropTypes.array.isRequired,
+  handleInputFilterTitle: PropTypes.func.isRequired, // Asegúrate de que esta función es requerida
+  handleInputFilterAutor: PropTypes.func, // Si es necesaria, asegúrate de que es requerida
+  handleClickClear: PropTypes.func.isRequired,
+  bookOne: PropTypes.string.isRequired,
+  autorOne: PropTypes.string.isRequired,
+  uniqueAutors: PropTypes.arrayOf(PropTypes.string),
 };
+
 export default HomePage;

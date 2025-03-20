@@ -1,10 +1,8 @@
 import photo_aboutme from "../../images/1728998786112.jpg";
-import Header from "../layout/Header";
 
 function AboutMe() {
   return (
     <div>
-      <Header />
       <img
         className="aboutme_img"
         src={photo_aboutme}

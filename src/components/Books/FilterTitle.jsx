@@ -5,12 +5,10 @@ function FilterTitle({
   handleInputFilterTitle,
   handleFilterAutor,
   handleClickClear,
+  uniqueAutors,
   bookOne,
   autorOne,
-  autors,
 }) {
-
-    const 
   return (
     <form className="form">
       <h2 className="form_search">¿Buscas un libro en concreto?</h2>
@@ -30,8 +28,8 @@ function FilterTitle({
           Autor
         </label>
         <FilterAutor
-          autors={autors}
-          onChange={handleFilterAutor}
+          uniqueAutors={uniqueAutors}
+          handleFilterAutor={handleFilterAutor}
           autorOne={autorOne}
         ></FilterAutor>
       </section>
@@ -46,6 +44,7 @@ FilterTitle.propTypes = {
   handleInputFilterTitle: PropTypes.func,
   handleFilterAutor: PropTypes.func,
   handleClickClear: PropTypes.func,
+  uniqueAutors: PropTypes.array,
   bookOne: PropTypes.string,
   autorOne: PropTypes.string,
   autors: PropTypes.arrayOf(PropTypes.string),

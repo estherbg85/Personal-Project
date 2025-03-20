@@ -1,28 +1,32 @@
 import PropTypes from "prop-types";
 
-function FilterAutor({ autors = [], onChange, autorOne }) {
+function FilterAutor({ uniqueAutors = [], handleFilterAutor, autorOne }) {
+  const isValidAutor = uniqueAutors.includes(autorOne) ? autorOne : "";
+
   return (
     <select
       className="form_input"
       id="autorFilter"
-      onChange={onChange}
-      value={autorOne}
+      onChange={handleFilterAutor}
+      value={isValidAutor}
     >
-      <option value="">Autores</option>
-      {autors.length > 0
-        ? autors.map((autor) => (
-            <option key={autor} value={autor}>
-              {autor}
-            </option>
-          ))
-        : null}
+      <option value="">Autor</option>
+      {uniqueAutors.length > 0 ? (
+        uniqueAutors.map((autor) => (
+          <option key={autor} value={autor}>
+            {autor}
+          </option>
+        ))
+      ) : (
+        <option disabled>No hay autores disponibles</option>
+      )}
     </select>
   );
 }
 
 FilterAutor.propTypes = {
-  autors: PropTypes.arrayOf(PropTypes.string),
-  onChange: PropTypes.func.isRequired,
+  uniqueAutors: PropTypes.arrayOf(PropTypes.string),
+  handleFilterAutor: PropTypes.func,
   autorOne: PropTypes.string,
 };
 export default FilterAutor;

@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-function Books0_1({ books }) {
+function Books2_3({ books }) {
   const [booksFilter, setBooksFilter] = useState([]);
 
   useEffect(() => {
     // Filtrar los libros cuando el componente se monta
     const booksAgeRange = books.filter(
-      (book) => book.ageRange.min === 0 && book.ageRange.max === 1
+      (book) => book.ageRange.min === 2 && book.ageRange.max === 3
     );
     setBooksFilter(booksAgeRange);
   }, [books]); // El array vacío asegura que solo se ejecute al montar el componente
 
   return (
     <div>
-      <h1>Libros para 0-1 años</h1>
+      <h1>Libros para 2-3 años</h1>
       <ul className="book">
         {booksFilter.length === 0 ? (
           <p>No hay libros disponibles para este rango de edad.</p>
@@ -35,8 +35,8 @@ function Books0_1({ books }) {
   );
 }
 
-Books0_1.propTypes = {
+Books2_3.propTypes = {
   books: PropTypes.array.isRequired,
 };
 
-export default Books0_1;
+export default Books2_3;

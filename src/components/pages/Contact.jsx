@@ -1,10 +1,6 @@
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-
 function Contact() {
   return (
     <div>
-      <Header />
       <p>
         Si buscas información sobre un libro en concreto, y no aparece en el
         listado, por favor, rellena el siguiente formulario.
@@ -56,7 +52,6 @@ function Contact() {
           rows="5"
         ></textarea>
       </form>
-      <Footer></Footer>
     </div>
   );
 }
